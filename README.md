@@ -13,7 +13,7 @@ The `datasets` folder contains the main data files and the schema files for all 
 
 ---
 
-The following is the list of datasets along with a brief description and attributions:
+The following is the list of datasets along with a brief description for each and its attribution:
 
 ---
 
