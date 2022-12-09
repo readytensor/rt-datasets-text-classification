@@ -159,7 +159,7 @@ The task is to classify each job posting into the fake vs genuine categories usi
 - number of samples = 17,880
 - number of classes = 2
 
-#### Attributio
+#### Attribution
 
 Original dataset is available on Kaggle:
 
