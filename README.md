@@ -9,7 +9,7 @@ The `datasets` folder contains the main data files and the schema files for all 
 - The Jupyter notebook file within each dataset folder is used to convert the raw data file(s) in `raw` folder into the processed form in `processed` folder.
 - The folder `schema_cfg` contains a csv which is needed by the schema generation script (described below) .
 
-`schema_gen` folder contains a schema gen config file (YAML) and a python script which are used to generate the JSON schema files stored in the `processed` folder for each dataset.
+`schema_gen` folder contains a schema gen config file (YAML) and a python script which are used to generate the JSON schema files stored in the `processed` folder for each dataset. The generated schema file conforms to the Ready Tensor specification for this category.
 
 ---
 
