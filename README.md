@@ -2,11 +2,18 @@
 
 This repo contains all files related to the datasets used in algorithm evaluation for the Text Classification - Base category.
 
-The `datasets` folder contains the main data files and the schema files.
+The `datasets` folder contains the main data files and the schema files for all the benchmark datasets under Text Classification - Base category. Within each dataset folder in `datasets`:
 
-`data_processing` folder contains Jupyter notebooks for processing the original data files into the formats needed by Ready Tensor. The folder also contains the scripts used for generating the schema files.
+- The `raw` folder contains the original data files from the source (see attributions below).
+- `processed` folder contains the compressed, processed files. These files are used in algorithm evaluations. The file with suffix "\_train.csv" is used for training, "\_test.csv" is used for testing (without the targets), "\_test_key.csv" contains the targets for the test data. The JSON file with suffix "\_schema.json" is the schema file for the corresponding dataset.
+- The Jupyter notebook file within each dataset folder is used to convert the raw data file(s) in `raw` folder into the processed form in `processed` folder.
+- The folder `schema_cfg` contains a csv which is needed by the schema generation script (described below) .
 
-The following is the attribution for all the datasets:
+`schema_gen` folder contains a schema gen config file (YAML) and a python script which are used to generate the JSON schema files stored in the `processed` folder for each dataset.
+
+---
+
+The following is the list of datasets along with a brief description and attributions:
 
 ---
 
@@ -19,6 +26,7 @@ The following is the attribution for all the datasets:
 #### Description
 
 This is a dataset of feedback on musical instruments sold on Amazon. Features include the review text, a summary of the review, and the overall rating (on a 1-5 integer scale). The task in this case is to correctly classify each sample using the review text and the summary into one of the five rating categories.
+The text field is created by concatenating the ‘summary’ and ‘reviewText’ fields in the original data.
 
 #### Dataset characteristics
 
@@ -144,7 +152,7 @@ https://doi.org/10.5281/zenodo.3355823
 
 This dataset contains ~18K job descriptions out of which about 800 are fake. The data consists of both textual information and meta-information about the jobs. The dataset can be used to create classification models which can learn the job descriptions which are fraudulent.
 
-The task is to classify each job posting into the fake vs genuine categories using the company profile, description, and requirements fields.
+The task is to classify each job posting into the fake vs genuine categories using the concatenated text from company profile, description, and requirements fields.
 
 #### Dataset characteristics
 

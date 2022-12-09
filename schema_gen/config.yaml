@@ -1,0 +1,38 @@
+model_categories:
+  text_classification_base:
+    data_types:
+      string: TEXT
+      categorical: CATEGORICAL
+      numeric: NUMERIC
+
+    field_use_types:
+      id: ID
+      document: DOCUMENT
+      target: TARGET
+
+    schemaFields:
+      fieldName: field_name
+      dataType: data_type
+      fieldUseType: field_use_type
+
+    datasets:
+      newsgroups:
+        fname: newsgroups_schema_cfg.csv
+      fake_job_postings:
+        fname: fake_job_postings_schema_cfg.csv
+      hate_speech:
+        fname: hate_speech_schema_cfg.csv
+      ecommerce_categories:
+        fname: ecommerce_categories_schema_cfg.csv
+      musical_instruments:
+        fname: musical_instruments_schema_cfg.csv
+      clickbait:
+        fname: clickbait_schema_cfg.csv
+      drug_reviews:
+        fname: drug_reviews_schema_cfg.csv
+      movie_reviews:
+        fname: movie_reviews_schema_cfg.csv
+      spam_text:
+        fname: "spam_text_schema_cfg.csv"
+      tweet_emotions:
+        fname: "tweet_emotions_schema_cfg.csv"

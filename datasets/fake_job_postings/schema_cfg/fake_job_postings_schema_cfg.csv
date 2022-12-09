@@ -1,0 +1,4 @@
+field_num,field_name,data_type,field_use_type
+1,job_id,TEXT,ID
+2,fraudulent,TEXT,TARGET
+3,company_profile_description_requirements,TEXT,DOCUMENT

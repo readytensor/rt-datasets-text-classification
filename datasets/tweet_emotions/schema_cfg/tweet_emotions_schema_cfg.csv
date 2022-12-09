@@ -1,0 +1,4 @@
+field_num,field_name,data_type,field_use_type
+1,tweet_id,TEXT,ID
+2,sentiment,TEXT,TARGET
+3,content,TEXT,DOCUMENT
