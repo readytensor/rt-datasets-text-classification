@@ -254,7 +254,7 @@ We removed a small number of posts which became null (empty) after removal of me
 
 - number of samples = 18,466
 - number of classes = 20
-- Note that the original dataset contains a total of 18,846 samples over the train and test splits. We have applied filters (described in the ‘Description’ section above) which then yielded the final dataset with 18,466 samples.
+- Note that the original dataset contains a total of 18,846 samples over the train and test splits. We have applied filters (listed in the ‘Description’ section above) which then yielded the final dataset with 18,466 samples.
 
 #### Attribution
 
