@@ -51,7 +51,6 @@ def gen_text_classification_base_schemas(schema_cfg, root_path):
         schema_dirpath = os.path.join(root_path, "datasets", dataset, "schema_cfg")
         input_fpath = os.path.join(schema_dirpath, datasets[dataset]["fname"])
         schema_params = pd.read_csv(input_fpath)
-        fname_wo_ext = Path(datasets[dataset]["fname"]).stem
         output_fpath = os.path.join(
             root_path,
             "datasets",
