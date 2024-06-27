@@ -1,4 +1,0 @@
-field_num,field_name,data_type,field_use_type
-1,id,TEXT,ID
-2,newsgroup,TEXT,TARGET
-3,text,TEXT,DOCUMENT

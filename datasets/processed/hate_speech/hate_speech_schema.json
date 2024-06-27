@@ -1,0 +1,30 @@
+{
+  "title": "Hate Speech",
+  "description": "This dataset contains 24783 tweets which have been categorized into three classes: offensive language, hate speech, and neither. The task is to accurate categorize each tweet into the correct class. Caution: The data contains content that is racist, sexist, homophobic, and offensive in many ways.",
+  "modelCategory": "text_classification_base",
+  "schemaVersion": 1.0,
+  "inputDataFormat": "CSV",
+  "encoding": "utf-8",
+  "id": {
+    "name": "id",
+    "description": "Unique identifier for each sample in the dataset."
+  },
+  "target": {
+    "name": "class",
+    "description": "..",
+    "classes": [
+      "hate_speech",
+      "neither",
+      "offensive_language"
+    ]
+  },
+  "features": [
+    {
+      "name": "tweet",
+      "description": "The text to be classified",
+      "dataType": "TEXT",
+      "example": "934 8616\ni got a missed call from yo bitch",
+      "nullable": false
+    }
+  ]
+}

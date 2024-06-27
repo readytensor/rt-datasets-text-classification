@@ -1,0 +1,47 @@
+{
+  "title": "Newsgroups",
+  "description": "The newsgroups dataset comprises around ~18,000 newsgroups posts that are organized into 20 different newsgroups, each corresponding to a different topic. Some of the newsgroups are very closely related to each other (e.g. comp.sys.ibm.pc.hardware / comp.sys.mac.hardware), while others are highly unrelated (e.g misc.forsale / soc.religion.christian).",
+  "modelCategory": "text_classification_base",
+  "schemaVersion": 1.0,
+  "inputDataFormat": "CSV",
+  "encoding": "utf-8",
+  "id": {
+    "name": "id",
+    "description": "Unique identifier for each sample in the dataset."
+  },
+  "target": {
+    "name": "newsgroup",
+    "description": "..",
+    "classes": [
+      "alt.atheism",
+      "comp.graphics",
+      "comp.os.ms-windows.misc",
+      "comp.sys.ibm.pc.hardware",
+      "comp.sys.mac.hardware",
+      "comp.windows.x",
+      "misc.forsale",
+      "rec.autos",
+      "rec.motorcycles",
+      "rec.sport.baseball",
+      "rec.sport.hockey",
+      "sci.crypt",
+      "sci.electronics",
+      "sci.med",
+      "sci.space",
+      "soc.religion.christian",
+      "talk.politics.guns",
+      "talk.politics.mideast",
+      "talk.politics.misc",
+      "talk.religion.misc"
+    ]
+  },
+  "features": [
+    {
+      "name": "text",
+      "description": "The text to be classified",
+      "dataType": "TEXT",
+      "example": "\n\nOops! Quite right. I got so busy that I saved Frank's last post back then,\nintending to respond when I could, and I sort of forgot. I'll try to do it\nsoon if anyone's still interested, and probably even if they're not.\n\n\nWell, yes, maybe I am. I'm trying to have people buy and take on my opinions,\nthus causing said opinions to spread in time-honoured memetic virus mode until\nthe world is a veritable paradise. So how about it, folks? As they say over\nhere, You Know It Makes Sense.\n\n\nCheers\n\nSimon",
+      "nullable": false
+    }
+  ]
+}

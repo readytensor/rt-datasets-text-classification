@@ -1,0 +1,31 @@
+{
+  "title": "Ecommerce Categories",
+  "description": "This is the classification based E-commerce text dataset. There are 4 categories of products - \"Electronics\", \"Household\", \"Books\" and \"Clothing & Accessories\", which are the most common products sold on most ecommerce websites. The task is to predict the category of the product given its description.",
+  "modelCategory": "text_classification_base",
+  "schemaVersion": 1.0,
+  "inputDataFormat": "CSV",
+  "encoding": "utf-8",
+  "id": {
+    "name": "Id",
+    "description": "Unique identifier for each sample in the dataset."
+  },
+  "target": {
+    "name": "category",
+    "description": "..",
+    "classes": [
+      "Books",
+      "Clothing & Accessories",
+      "Electronics",
+      "Household"
+    ]
+  },
+  "features": [
+    {
+      "name": "description",
+      "description": "The text to be classified",
+      "dataType": "TEXT",
+      "example": "BREGEO Men's Cotton Casual Blazer This one button slim lapel super slim fit jacket is made with the perfect blend of terry and rayon. That makes it comfortable and stylish at the same time. The jet black colour is perfect to carry your evenings in epic style.",
+      "nullable": false
+    }
+  ]
+}

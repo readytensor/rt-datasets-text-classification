@@ -1,0 +1,29 @@
+{
+  "title": "Spam Text",
+  "description": "The SMS Spam Collection is a public set of SMS labeled messages that have been collected for mobile phone spam research. The task involves classifying the messages into spam or ham (i.e. not-spam).",
+  "modelCategory": "text_classification_base",
+  "schemaVersion": 1.0,
+  "inputDataFormat": "CSV",
+  "encoding": "utf-8",
+  "id": {
+    "name": "Id",
+    "description": "Unique identifier for each sample in the dataset."
+  },
+  "target": {
+    "name": "Category",
+    "description": "..",
+    "classes": [
+      "ham",
+      "spam"
+    ]
+  },
+  "features": [
+    {
+      "name": "Message",
+      "description": "The text to be classified",
+      "dataType": "TEXT",
+      "example": "Squeeeeeze!! This is christmas hug.. If u lik my frndshp den hug me back.. If u get 3 u r cute:) 6 u r luvd:* 9 u r so lucky;) None? People hate u:",
+      "nullable": false
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "title": "Clickbait",
+  "description": "This dataset contains a collection of two types of headlines - clickbait and non-clickbait. The clickbait article headlines are collected from \u00ef\u00bf\u00bdBuzzFeed\u00ef\u00bf\u00bd, \u00ef\u00bf\u00bdUpworthy\u00ef\u00bf\u00bd, \u00ef\u00bf\u00bdViralNova\u00ef\u00bf\u00bd, \u00ef\u00bf\u00bdThatscoop\u00ef\u00bf\u00bd, \u00ef\u00bf\u00bdScoopwhoop\u00ef\u00bf\u00bd and \u00ef\u00bf\u00bdViralStories\u00ef\u00bf\u00bd. The non-clickbait article headlines are collected from \u00ef\u00bf\u00bdWikiNews\u00ef\u00bf\u00bd, \u00ef\u00bf\u00bdNew York Times\u00ef\u00bf\u00bd, \u00ef\u00bf\u00bdThe Guardian\u00ef\u00bf\u00bd, and \u00ef\u00bf\u00bdThe Hindu\u00ef\u00bf\u00bd. The task is to accurately classify a headline into the clickbait or non-clickbait class.",
+  "modelCategory": "text_classification_base",
+  "schemaVersion": 1.0,
+  "inputDataFormat": "CSV",
+  "encoding": "utf-8",
+  "id": {
+    "name": "id",
+    "description": "Unique identifier for each sample in the dataset."
+  },
+  "target": {
+    "name": "class",
+    "description": "..",
+    "classes": [
+      "clickbait",
+      "non_clickbait"
+    ]
+  },
+  "features": [
+    {
+      "name": "text",
+      "description": "The text to be classified",
+      "dataType": "TEXT",
+      "example": "Inside The Most OMG Scene In \"Creed\"",
+      "nullable": false
+    }
+  ]
+}

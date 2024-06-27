@@ -1,0 +1,28 @@
+model_category,name,field_num,field_name,field_type,data_type,field_description,use_feature
+text_classification_base,clickbait,1,id,id,INT,Unique identifier for each sample,1
+text_classification_base,clickbait,2,text,feature,TEXT,The text to be classified,1
+text_classification_base,clickbait,3,class,target,CATEGORICAL,The class label,1
+text_classification_base,drug_reviews,1,id,id,INT,Unique identifier for each sample,1
+text_classification_base,drug_reviews,2,text,feature,TEXT,The text to be classified,1
+text_classification_base,drug_reviews,3,effectiveness,target,CATEGORICAL,The class label,1
+text_classification_base,ecommerce_categories,1,id,id,INT,Unique identifier for each sample,1
+text_classification_base,ecommerce_categories,2,description,feature,TEXT,The text to be classified,1
+text_classification_base,ecommerce_categories,3,category,target,CATEGORICAL,The class label,1
+text_classification_base,fake_job_postings,1,id,id,INT,Unique identifier for each sample,1
+text_classification_base,fake_job_postings,2,company_profile_description_requirements,feature,TEXT,The text to be classified,1
+text_classification_base,fake_job_postings,3,fraudulent,target,CATEGORICAL,The class label,1
+text_classification_base,hate_speech,1,id,id,INT,Unique identifier for each sample,1
+text_classification_base,hate_speech,2,tweet,feature,TEXT,The text to be classified,1
+text_classification_base,hate_speech,3,class,target,CATEGORICAL,The class label,1
+text_classification_base,movie_reviews,1,id,id,INT,Unique identifier for each sample,1
+text_classification_base,movie_reviews,2,text,feature,TEXT,The text to be classified,1
+text_classification_base,movie_reviews,3,class,target,CATEGORICAL,The class label,1
+text_classification_base,newsgroups,1,id,id,INT,Unique identifier for each sample,1
+text_classification_base,newsgroups,2,text,feature,TEXT,The text to be classified,1
+text_classification_base,newsgroups,3,newsgroup,target,CATEGORICAL,The class label,1
+text_classification_base,spam_text,1,Id,id,INT,Unique identifier for each sample,1
+text_classification_base,spam_text,2,Message,feature,TEXT,The text to be classified,1
+text_classification_base,spam_text,3,Category,target,CATEGORICAL,The class label,1
+text_classification_base,tweet_emotions,1,tweet_id,id,INT,Unique identifier for each sample,1
+text_classification_base,tweet_emotions,2,content,feature,TEXT,The text to be classified,1
+text_classification_base,tweet_emotions,3,sentiment,target,CATEGORICAL,The class label,1
