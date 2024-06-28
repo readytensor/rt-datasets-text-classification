@@ -17,13 +17,10 @@
       "non_clickbait"
     ]
   },
-  "features": [
-    {
-      "name": "text",
-      "description": "The text to be classified",
-      "dataType": "TEXT",
-      "example": "Inside The Most OMG Scene In \"Creed\"",
-      "nullable": false
-    }
-  ]
+  "textField": {
+    "name": "text",
+    "description": "The text to be classified",
+    "dataType": "TEXT",
+    "example": "Inside The Most OMG Scene In \"Creed\""
+  }
 }

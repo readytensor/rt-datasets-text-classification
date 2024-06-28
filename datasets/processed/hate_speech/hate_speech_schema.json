@@ -18,13 +18,10 @@
       "offensive_language"
     ]
   },
-  "features": [
-    {
-      "name": "tweet",
-      "description": "The text to be classified",
-      "dataType": "TEXT",
-      "example": "934 8616\ni got a missed call from yo bitch",
-      "nullable": false
-    }
-  ]
+  "textField": {
+    "name": "tweet",
+    "description": "The text to be classified",
+    "dataType": "TEXT",
+    "example": "934 8616\ni got a missed call from yo bitch"
+  }
 }

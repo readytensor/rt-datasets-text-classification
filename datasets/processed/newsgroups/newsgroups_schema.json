@@ -35,13 +35,10 @@
       "talk.religion.misc"
     ]
   },
-  "features": [
-    {
-      "name": "text",
-      "description": "The text to be classified",
-      "dataType": "TEXT",
-      "example": "\n\nOops! Quite right. I got so busy that I saved Frank's last post back then,\nintending to respond when I could, and I sort of forgot. I'll try to do it\nsoon if anyone's still interested, and probably even if they're not.\n\n\nWell, yes, maybe I am. I'm trying to have people buy and take on my opinions,\nthus causing said opinions to spread in time-honoured memetic virus mode until\nthe world is a veritable paradise. So how about it, folks? As they say over\nhere, You Know It Makes Sense.\n\n\nCheers\n\nSimon",
-      "nullable": false
-    }
-  ]
+  "textField": {
+    "name": "text",
+    "description": "The text to be classified",
+    "dataType": "TEXT",
+    "example": "\n\nOops! Quite right. I got so busy that I saved Frank's last post back then,\nintending to respond when I could, and I sort of forgot. I'll try to do it\nsoon if anyone's still interested, and probably even if they're not.\n\n\nWell, yes, maybe I am. I'm trying to have people buy and take on my opinions,\nthus causing said opinions to spread in time-honoured memetic virus mode until\nthe world is a veritable paradise. So how about it, folks? As they say over\nhere, You Know It Makes Sense.\n\n\nCheers\n\nSimon"
+  }
 }

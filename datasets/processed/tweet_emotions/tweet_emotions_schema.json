@@ -28,13 +28,10 @@
       "worry"
     ]
   },
-  "features": [
-    {
-      "name": "content",
-      "description": "The text to be classified",
-      "dataType": "TEXT",
-      "example": "Good Morning",
-      "nullable": false
-    }
-  ]
+  "textField": {
+    "name": "content",
+    "description": "The text to be classified",
+    "dataType": "TEXT",
+    "example": "Good Morning"
+  }
 }

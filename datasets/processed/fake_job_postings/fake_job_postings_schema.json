@@ -17,13 +17,10 @@
       1
     ]
   },
-  "features": [
-    {
-      "name": "company_profile_description_requirements",
-      "description": "The text to be classified",
-      "dataType": "TEXT",
-      "example": "company profile not available Stylect is a dynamic startup that helps helps women discover and buy shoes. We\u2019re a small team based in London that has previously worked at Google, Techstars, Pixelmator and Rocket Internet.We place a high premium on simplicity no matter what we\u2019re working on (i.e. design, programming, marketing). We\u2019re also a team that ships fast. We built version 1 of our app in a week, the next release (built in a month) was featured in the Apple Appstore Italy as a best new fashion app. Fast release cycles are challenging, but also very fun - which is why we love them.\u00a0As we\u2019ve grown, the projects that we\u2019re working on have grown both in scale and in technical complexity. \u00a0Stylect is looking for someone who can help us improve our backend which gathers product data; analyses/categorizes it; and shows it to thousands of users daily. Each step in the process has unique challenges that demands a strong technical background.\u00a0 We don\u2019t care where you studied or what your GPA in college was. But we do want someone who is:Strong with Python and No SQL DatabasesEntrepreneurial--independent and can solve problems without being micro-managedCan brainstorm multiple approaches to solving problems instead of being attached to just one way of doing thingsIcing on the cakePrevious experience with Google Appengine\u2019s Datastore (NDB)Previous experience at e-commerce and app-based startupsFull Stack Development Experience from the Frontend (either with apps or html) all the way to the linux server.An understanding of algorithms and experience with libraries to implement themExperience with machine learning and natural language processing",
-      "nullable": false
-    }
-  ]
+  "textField": {
+    "name": "company_profile_description_requirements",
+    "description": "The text to be classified",
+    "dataType": "TEXT",
+    "example": "company profile not available Stylect is a dynamic startup that helps helps women discover and buy shoes. We\u2019re a small team based in London that has previously worked at Google, Techstars, Pixelmator and Rocket Internet.We place a high premium on simplicity no matter what we\u2019re working on (i.e. design, programming, marketing). We\u2019re also a team that ships fast. We built version 1 of our app in a week, the next release (built in a month) was featured in the Apple Appstore Italy as a best new fashion app. Fast release cycles are challenging, but also very fun - which is why we love them.\u00a0As we\u2019ve grown, the projects that we\u2019re working on have grown both in scale and in technical complexity. \u00a0Stylect is looking for someone who can help us improve our backend which gathers product data; analyses/categorizes it; and shows it to thousands of users daily. Each step in the process has unique challenges that demands a strong technical background.\u00a0 We don\u2019t care where you studied or what your GPA in college was. But we do want someone who is:Strong with Python and No SQL DatabasesEntrepreneurial--independent and can solve problems without being micro-managedCan brainstorm multiple approaches to solving problems instead of being attached to just one way of doing thingsIcing on the cakePrevious experience with Google Appengine\u2019s Datastore (NDB)Previous experience at e-commerce and app-based startupsFull Stack Development Experience from the Frontend (either with apps or html) all the way to the linux server.An understanding of algorithms and experience with libraries to implement themExperience with machine learning and natural language processing"
+  }
 }

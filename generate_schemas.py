@@ -29,29 +29,30 @@ def create_feature_section(
     features_config = features_config[features_config["name"] == dataset_row["name"]]
 
     # create the features section
-    features = []
     features_df = features_config[
         (features_config["name"] == dataset_name)
-        & (features_config["field_type"] == "feature")
+        & (features_config["field_type"] == "text_field")
     ]
-    for _, feature_row in features_df.iterrows():
-        if feature_row["use_feature"] == 0:
-            continue
-        feature = {
-            "name": feature_row["field_name"],
-            "description": feature_row["field_description"],
-            "dataType": feature_row["data_type"].upper(),
-        }
-        if feature_row["data_type"].upper() == "CATEGORICAL":
-            feature["categories"] = sorted(
-                dataset[feature_row["field_name"]].dropna().unique().tolist(), key=str
-            )
-        else:
-            feature["example"] = dataset[feature_row["field_name"]].dropna().iloc[0]
-        feature["nullable"] = dataset[feature_row["field_name"]].isnull().any()
-        features.append(feature)
 
-    return features
+    if features_df.shape[0] > 1:
+        raise ValueError(
+            f"Multiple text_field features found for dataset {dataset_name}."
+        )
+
+    feature_row = features_df.iloc[0]
+    feature = {
+        "name": feature_row["field_name"],
+        "description": feature_row["field_description"],
+        "dataType": feature_row["data_type"].upper(),
+    }
+    if feature_row["data_type"].upper() == "CATEGORICAL":
+        feature["categories"] = sorted(
+            dataset[feature_row["field_name"]].dropna().unique().tolist(), key=str
+        )
+    else:
+        feature["example"] = dataset[feature_row["field_name"]].dropna().iloc[0]
+
+    return feature
 
 
 def generate_schemas(
@@ -106,7 +107,7 @@ def generate_schemas(
             ),
         }
 
-        schema["features"] = create_feature_section(
+        schema["textField"] = create_feature_section(
             dataset_name, dataset_row, dataset, features_config
         )
 
