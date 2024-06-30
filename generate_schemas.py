@@ -99,12 +99,12 @@ def generate_schemas(
             os.path.join(processed_datasets_path, dataset_name, f"{dataset_name}.zip")
         )
 
+        classes = sorted(dataset[dataset_row["target_name"]].dropna().unique().tolist())
+        classes = [str(c) for c in classes]
         schema["target"] = {
             "name": dataset_row["target_name"],
             "description": dataset_row["target_description"],
-            "classes": sorted(
-                dataset[dataset_row["target_name"]].dropna().unique().tolist()
-            ),
+            "classes": classes,
         }
 
         schema["textField"] = create_feature_section(

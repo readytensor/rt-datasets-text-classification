@@ -8,7 +8,7 @@ text_classification_base,drug_reviews,3,effectiveness,target,CATEGORICAL,The cla
 text_classification_base,ecommerce_categories,1,id,id,INT,Unique identifier for each sample,1
 text_classification_base,ecommerce_categories,2,description,text_field,TEXT,The text to be classified,1
 text_classification_base,ecommerce_categories,3,category,target,CATEGORICAL,The class label,1
-text_classification_base,fake_job_postings,1,id,id,INT,Unique identifier for each sample,1
+text_classification_base,fake_job_postings,1,job_id,id,INT,Unique identifier for each sample,1
 text_classification_base,fake_job_postings,2,company_profile_description_requirements,text_field,TEXT,The text to be classified,1
 text_classification_base,fake_job_postings,3,fraudulent,target,CATEGORICAL,The class label,1
 text_classification_base,hate_speech,1,id,id,INT,Unique identifier for each sample,1

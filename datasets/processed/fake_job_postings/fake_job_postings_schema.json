@@ -6,15 +6,15 @@
   "inputDataFormat": "CSV",
   "encoding": "utf-8",
   "id": {
-    "name": "id",
+    "name": "job_id",
     "description": "Unique identifier for each sample in the dataset."
   },
   "target": {
     "name": "fraudulent",
     "description": "..",
     "classes": [
-      0,
-      1
+      "0",
+      "1"
     ]
   },
   "textField": {
