@@ -1,0 +1,26 @@
+{
+  "title": "IMDB",
+  "description": "This is a dataset for binary sentiment classification. It contains a set of 25,000 highly polar movie reviews for training, and 25,000 for testing. For more information, refer to: https://ai.stanford.edu/~amaas/data/sentiment/",
+  "modelCategory": "text_classification_base",
+  "schemaVersion": 1.0,
+  "inputDataFormat": "CSV",
+  "encoding": "utf-8",
+  "id": {
+    "name": "id",
+    "description": "Unique identifier for each sample in the dataset."
+  },
+  "target": {
+    "name": "class",
+    "description": "The sentiment of the review (pos or neg)",
+    "classes": [
+      "neg",
+      "pos"
+    ]
+  },
+  "textField": {
+    "name": "text",
+    "description": "The text to be classified",
+    "dataType": "TEXT",
+    "example": "For a movie that gets no respect there sure are a lot of memorable quotes listed for this gem. Imagine a movie where Joe Piscopo is actually funny! Maureen Stapleton is a scene stealer. The Moroni character is an absolute scream. Watch for Alan \"The Skipper\" Hale jr. as a police Sgt."
+  }
+}
