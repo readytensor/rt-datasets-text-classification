@@ -1,0 +1,26 @@
+{
+  "title": "CoLA",
+  "description": "The Corpus of Linguistic Acceptability (CoLA) in its full form consists of 10657 sentences from 23 linguistics publications, expertly annotated for acceptability (grammaticality) by their original authors. The public version provided here contains 9594 sentences belonging to training and development sets, and excludes 1063 sentences belonging to a held out test set.",
+  "modelCategory": "text_classification_base",
+  "schemaVersion": 1.0,
+  "inputDataFormat": "CSV",
+  "encoding": "utf-8",
+  "id": {
+    "name": "id",
+    "description": "Unique identifier for each sample in the dataset."
+  },
+  "target": {
+    "name": "acceptability",
+    "description": "the acceptability judgment label (0=unacceptable, 1=acceptable).",
+    "classes": [
+      "0",
+      "1"
+    ]
+  },
+  "textField": {
+    "name": "text",
+    "description": "The text to be classified",
+    "dataType": "TEXT",
+    "example": "Angela characterized Shelly as a lifesaver."
+  }
+}
