@@ -7,9 +7,8 @@ The `datasets` folder contains the main data files and the schema files for all 
 - The `raw` folder contains the original data files from the source (see attributions below).
 - `processed` folder contains the compressed, processed files. These files are used in algorithm evaluations. The file with suffix "\_train.csv" is used for training, "\_test.csv" is used for testing (without the targets), "\_test_key.csv" contains the targets for the test data. This test key file is used to generate scores by comparing with predictions. The JSON file with suffix "\_schema.json" is the schema file for the corresponding dataset.
 - The Jupyter notebook file within each dataset folder is used to convert the raw data file(s) in `raw` folder into the processed form in `processed` folder.
-- The folder `schema_cfg` contains a csv which is needed by the schema generation script (described below) .
+- The folder `config` contains 2 csv which are needed by the schema generation script (described below) .
 
-`schema_gen` folder contains a schema gen config file (YAML) and a python script which are used to generate the JSON schema files stored in the `processed` folder for each dataset. The generated schema file conforms to the Ready Tensor specification for this category.
 
 ---
 
@@ -37,6 +36,39 @@ The text field is created by concatenating the ‘summary’ and ‘reviewText�
 
 Original data is available on Kaggle here:
 https://www.kaggle.com/datasets/eswarchandt/amazon-music-reviews
+
+---
+
+## Banking77
+
+#### Alias (in scorecards): banking77
+
+#### Domain / Banking
+
+#### Description
+Dataset composed of online banking queries annotated with their corresponding intents.
+
+BANKING77 dataset provides a very fine-grained set of intents in a banking domain. It comprises 13,083 customer service queries labeled with 77 intents. It focuses on fine-grained single-domain intent detection.
+
+Supported Tasks and Leaderboards
+Intent classification, intent detection
+
+Languages
+English
+
+Dataset Structure
+Data Instances
+An example of 'train' looks as follows:
+```
+{
+  'label': 11, # integer label corresponding to "card_arrival" intent
+  'text': 'I am still waiting on my card?'
+}
+```
+
+#### Attribution
+
+The dataset is available on huggingface: https://huggingface.co/datasets/PolyAI/banking77
 
 ---
 
@@ -68,6 +100,30 @@ Abhijnan Chakraborty, Bhargavi Paranjape, Sourya Kakarla, and Niloy Ganguly. "St
 Original data can be found here:
 
 https://github.com/bhargaviparanjape/clickbait?ref=hackernoon.com
+
+---
+
+## (CoLA) The Corpus of Linguistic Acceptability
+
+#### Alias (in scorecards): cola
+
+#### Domain / Industry: Language
+
+#### Description
+
+The Corpus of Linguistic Acceptability (CoLA) in its full form consists of 10657 sentences from 23 linguistics publications, expertly annotated for acceptability (grammaticality) by their original authors.
+
+#### Attribution
+
+If you use CoLA dataset in your research please cite the following paper:
+@article{warstadt2018neural,
+title={Neural Network Acceptability Judgments},
+author={Warstadt, Alex and Singh, Amanpreet and Bowman, Samuel R},
+journal={arXiv preprint arXiv:1805.12471},
+year={2018}
+}
+
+source: https://nyu-mll.github.io/CoLA/
 
 ---
 
@@ -141,6 +197,37 @@ Gautam. (2019). E commerce text dataset (version - 2) [Data set]. Zenodo.
 https://doi.org/10.5281/zenodo.3355823
 
 ---
+## Emotion
+
+#### Alias (in scorecards): emotion
+
+#### Domain / Industry: Internet / Media / Social Network
+
+#### Description
+Emotion is a dataset of English Twitter messages with six basic emotions: anger, fear, joy, love, sadness, and surprise. For more detailed information please refer to the paper.
+
+#### Attribution
+@inproceedings{saravia-etal-2018-carer,
+    title = "{CARER}: Contextualized Affect Representations for Emotion Recognition",
+    author = "Saravia, Elvis  and
+      Liu, Hsien-Chi Toby  and
+      Huang, Yen-Hao  and
+      Wu, Junlin  and
+      Chen, Yi-Shin",
+    booktitle = "Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing",
+    month = oct # "-" # nov,
+    year = "2018",
+    address = "Brussels, Belgium",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/D18-1404",
+    doi = "10.18653/v1/D18-1404",
+    pages = "3687--3697",
+    abstract = "Emotions are expressed in nuanced ways, which varies by collective or individual experiences, knowledge, and beliefs. Therefore, to understand emotion, as conveyed through text, a robust mechanism capable of capturing and modeling different linguistic nuances and phenomena is needed. We propose a semi-supervised, graph-based algorithm to produce rich structural descriptors which serve as the building blocks for constructing contextualized affect representations from text. The pattern-based representations are further enriched with word embeddings and evaluated through several emotion recognition tasks. Our experimental results demonstrate that the proposed method outperforms state-of-the-art techniques on emotion recognition tasks.",
+}
+
+source: https://huggingface.co/datasets/dair-ai/emotion
+
+---
 
 ## Fake Job Postings
 
@@ -198,6 +285,34 @@ Davidson, Thomas and Warmsley, Dana and Macy, Michael and Weber, Ingmar,
 Data can be found here:
 
 https://github.com/t-davidson/hate-speech-and-offensive-language
+
+---
+
+## Large Movie Review Dataset 
+
+#### Alias (in scorecards): imdb
+
+#### Domain / Industry: Entertainment / Film
+
+#### Description
+
+This is a dataset for binary sentiment classification containing substantially more data than previous benchmark datasets. We provide a set of 25,000 highly polar movie reviews for training, and 25,000 for testing. There is additional unlabeled data for use as well. Raw text and already processed bag of words formats are provided. 
+
+#### Attribution
+
+@InProceedings{maas-EtAl:2011:ACL-HLT2011,
+  author    = {Maas, Andrew L.  and  Daly, Raymond E.  and  Pham, Peter T.  and  Huang, Dan  and  Ng, Andrew Y.  and  Potts, Christopher},
+  title     = {Learning Word Vectors for Sentiment Analysis},
+  booktitle = {Proceedings of the 49th Annual Meeting of the Association for Computational Linguistics: Human Language Technologies},
+  month     = {June},
+  year      = {2011},
+  address   = {Portland, Oregon, USA},
+  publisher = {Association for Computational Linguistics},
+  pages     = {142--150},
+  url       = {http://www.aclweb.org/anthology/P11-1015}
+}
+
+source: https://ai.stanford.edu/~amaas/data/sentiment/
 
 ---
 
@@ -301,33 +416,5 @@ Data can be found here:
 https://archive.ics.uci.edu/ml/datasets/SMS+Spam+Collection
 
 UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science.
-
----
-
-## Tweet Emotions
-
-#### Alias (in scorecards): tweet_emotions
-
-#### Domain / Industry: Internet / Media / Social Network
-
-#### Description
-
-The data is a collection of tweets annotated with the emotions behind them.
-
-Each tweet is classified into one of 13 different emotions.
-
-#### Dataset characteristics
-
-- number of samples = 8,000
-- number of classes = 13
-  Original dataset contains 39,827 samples. A random sample of 8,000 was chosen to fit within the size specifications for this problem category.
-
-#### Attribution
-
-This public domain dataset is collected from data.world platform who have kindly released it under Public License.
-
-Dataset can be found here:
-
-https://www.kaggle.com/pashupatigupta/emotion-detection-from-text
 
 ---

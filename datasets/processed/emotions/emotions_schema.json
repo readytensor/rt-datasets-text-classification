@@ -1,0 +1,30 @@
+{
+  "title": "Emotions",
+  "description": "\u00c9",
+  "modelCategory": "text_classification_base",
+  "schemaVersion": 1.0,
+  "inputDataFormat": "CSV",
+  "encoding": "utf-8",
+  "id": {
+    "name": "id",
+    "description": "Unique identifier for each sample in the dataset."
+  },
+  "target": {
+    "name": "label",
+    "description": "The emotion behind the text",
+    "classes": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ]
+  },
+  "textField": {
+    "name": "text",
+    "description": "The text to be classified",
+    "dataType": "TEXT",
+    "example": "i didnt feel humiliated"
+  }
+}

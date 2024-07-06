@@ -1,0 +1,29 @@
+{
+  "title": "Amazon Musical Instruments Reviews",
+  "description": "This is a dataset of feedback on musical instruments sold on Amazon. Features include the review text, a summary of the review, and the overall rating (on a 1-5 integer scale). The task in this case is to correctly classify each sample using the review text and the summary into one of the five rating categories. The text field is created by concatenating the \u00d4summary\u00d5 and \u00d4reviewText\u00d5 fields in the original data.",
+  "modelCategory": "text_classification_base",
+  "schemaVersion": 1.0,
+  "inputDataFormat": "CSV",
+  "encoding": "utf-8",
+  "id": {
+    "name": "reviewerID_asin",
+    "description": "Unique identifier for each sample in the dataset."
+  },
+  "target": {
+    "name": "overall",
+    "description": "Overall rating of the product.",
+    "classes": [
+      "1.0",
+      "2.0",
+      "3.0",
+      "4.0",
+      "5.0"
+    ]
+  },
+  "textField": {
+    "name": "text",
+    "description": "The text to be classified",
+    "dataType": "TEXT",
+    "example": "GREAT solution for acoustic guitar I've been using these on my acoustic guitars (and straps) for over a decade.  They're sturdy and convenient, and so much more attractive than adding a shoelace to your strap.  The ability to quickly disconnect the strap for storage (or when you don't need the strap hanging from your guitar, e.g., sitting in a chair) works exactly as advertised.  I've purchased several of these and can't say enough good things about the product and company!"
+  }
+}
