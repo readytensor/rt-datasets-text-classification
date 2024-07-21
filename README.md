@@ -9,8 +9,24 @@ The `datasets` folder contains the main data files and the schema files for all 
 - The Jupyter notebook file within each dataset folder is used to convert the raw data file(s) in `raw` folder into the processed form in `processed` folder.
 - The folder `config` contains 2 csv which are needed by the schema generation script (described below) .
 
+The list of datasets is as follows:
 
----
+| Dataset | Dataset Industry | # of samples | # of classes | Average document length (tokens) |
+|-------------------------------------------------------|:---------------------------:|:----------------:|:-------------:|:-------------:|
+| Amazon Musical Instruments Reviews | Ecommerce / Music | 10261 | 5 | 94.92 |
+| Banking77 | Banking | 13083 | 77 | 11.7 |
+| Clickbait | Technology / News / Media | 32000 | 2 | 9.06 |
+| The Corpus of Linguistic Acceptability (CoLA) | Language | 9078 | 2 | 7.68 |
+| Drug Reviews | Healthcare / Pharmaceutical | 4143 | 5 | 119.28 |
+| Ecommerce Categories | Ecommerce / Retail | 50424 | 4 | 114.18 |
+| Emotion | Internet / Media / Social Network | 20000 | 6 | 19.13 |
+| Fake Job Postings | Employment / Human Resources / Miscellaneous | 17880 | 2 | 342.22 |
+| Hate Speech | Internet / Media / Social Network | 24783 | 3 | 14.11 |
+| Large Movie Review Dataset (imdb) | Entertainment / Film | 50000 | 2 | 231.15 |
+| Movie Reviews | Entertainment / Film | 2000 | 2 | 746.34 |
+| Newsgroups | News / Media | 15159 | 20 | 190.86 |
+| Spam Text | Telecom | 5572 | 2 | 15.58 |
+
 
 The following is the list of datasets along with a brief description for each and its attribution:
 
@@ -87,9 +103,8 @@ The task is to accurately classify a headline into the clickbait or non-clickbai
 
 #### Dataset characteristics
 
-- number of samples = 10,000\*
+- number of samples = 32000
 - number of classes = 2
-- Original dataset contains 32,000 samples. A random sample of 10,000 was chosen to fit within the size specifications for the Text-Classification Base category.
 
 #### Attribution
 
